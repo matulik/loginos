@@ -23,11 +23,25 @@ import XCTest
  */
 
 class loginosQuickTestsSpec: QuickSpec {
-    var viewController: ViewController!
+    var navigationController : UINavigationController!
+    var visibleViewController: UIViewController! {
+        get {
+            return navigationController.visibleViewController
+        }
+    }
+    var presentedViewController : AnyObject! {
+        get {
+            return navigationController.presentedViewController
+        }
+    }
+    var topViewController : UIViewController! {
+        get {
+            return navigationController.topViewController
+        }
+    }
+    
     
     override func spec() {
-        var viewController : ViewController!
-        var navigationController : UINavigationController!
         
         // Why cany acces by self.viewController?
         func fillUsernameAndPassword(username name: String, password: String) {
@@ -39,85 +53,61 @@ class loginosQuickTestsSpec: QuickSpec {
         
         func pressLoginButton() {
             let LOGIN_BUTTON_TAG = 1
-            let loginButton: UIButton? = navigationController.visibleViewController?.view.viewWithTag(LOGIN_BUTTON_TAG) as? UIButton
+            let loginButton: UIButton? = visibleViewController.view.viewWithTag(LOGIN_BUTTON_TAG) as? UIButton
             if let button = loginButton {
                 button.sendActionsForControlEvents(.TouchUpInside)
             }
         }
         
-        beforeEach {
-            // Initialize application
-            let storyboard = UIStoryboard(name: "Main", bundle: NSBundle(forClass: self.dynamicType))
-            navigationController = storyboard.instantiateInitialViewController() as! UINavigationController
-            viewController = navigationController.topViewController as! ViewController
-            UIApplication.sharedApplication().keyWindow!.rootViewController = navigationController
-            //
-        }
-        
-        describe(".viewDidLoad()") {
+        describe("Given app is started") {
+            
             beforeEach {
-                _ = viewController.view
-                _ = navigationController.view
-            }
-        }
-        
-        describe("App is started") {
-            beforeEach {
-                viewController.beginAppearanceTransition(true, animated: false)
-                viewController.endAppearanceTransition()
+                // Initialize application
+                let storyboard = UIStoryboard(name: "Main", bundle: NSBundle(forClass: self.dynamicType))
+                self.navigationController = storyboard.instantiateInitialViewController() as! UINavigationController
+                UIApplication.sharedApplication().keyWindow!.rootViewController = self.navigationController
+                //
+                // Transitions
+                self.topViewController.beginAppearanceTransition(true, animated: false)
+                self.topViewController.endAppearanceTransition()
+                //
             }
             
-            context("Login test") {
-                it("Login with valid data") {
-                    
+            afterEach {
+                UIApplication.sharedApplication().keyWindow!.rootViewController = nil
+            }
+            
+            describe("When I see login screen") {
+                it("Then I Login with valid data") {
                     // Login screen is visible
-                    let loginVC: ViewController? = navigationController?.visibleViewController as? ViewController
-                    expect(loginVC).notTo(beNil())
+                    expect(self.visibleViewController).notTo(beNil())
                     
-                    // Login with valid data
                     fillUsernameAndPassword(username: "asd", password: "asd")
                     pressLoginButton()
                     
-                    // Wait for transition
                     waitUntil(timeout: 5) { (done) in
-                        
-                        // Transition logic check
-                        //// Why not topViewController?
-                        let loginSuccessFullVC: UIViewController? = navigationController?.visibleViewController
-                        expect(loginSuccessFullVC).notTo(beNil())
-                        if let loggedVC = loginSuccessFullVC {
-                            // LoginSuccessfull screen is visible
-                            expect(loggedVC.restorationIdentifier).to(equal("LoginSuccessfullID"))
-                        }
-                        //
-                        
-                        // Repeat every 1 sec
                         NSThread.sleepForTimeInterval(1)
                         done()
                     }
+                    expect(self.visibleViewController.restorationIdentifier).to(equal("LoginSuccessfullID"))
                 }
-                
-                it("Login with unvalid data") {
+            }
+            
+            describe("When I se login screen") {
+                it("Then I Login with unvalid data") {
                     
-                    // Login screen is visible
-                    let loginVC: ViewController? = navigationController?.visibleViewController as? ViewController
-                    expect(loginVC).notTo(beNil())
+                    expect(self.visibleViewController).notTo(beNil())
                     
-                    // Login with unvalid data
                     fillUsernameAndPassword(username: "a", password: "a")
                     pressLoginButton()
                     
-                    let errorAlert: UIAlertController? = navigationController.presentedViewController as? UIAlertController
-                    // Alert is visible
+                    let errorAlert: UIAlertController? = self.presentedViewController as? UIAlertController
                     expect(errorAlert).notTo(beNil())
                     
-                    if let alert = errorAlert {
-                        // Alert message is "Try again"
-                        expect(alert.message).to(contain("Try again"))
-                    }
-                    
+                    expect(errorAlert?.message).to(contain("Try again"))
                 }
             }
         }
     }
 }
+
