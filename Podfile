@@ -7,6 +7,10 @@ def testing_pods
     pod 'Nimble', '~> 3.2.0'
 end
 
+target 'loginos' do
+    testing_pods
+end
+
 target 'loginosQuickTests' do
     testing_pods
 end

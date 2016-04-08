@@ -1,506 +1,1176 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		210DA5B5AB1D4C5F7A4C099E /* Pods_loginosQuickTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9822C843C7176E01AF51D410 /* Pods_loginosQuickTests.framework */; };
-		680D36B41CB6DF2200A9339E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680D36B31CB6DF2200A9339E /* AppDelegate.swift */; };
-		680D36B61CB6DF2200A9339E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680D36B51CB6DF2200A9339E /* ViewController.swift */; };
-		680D36B91CB6DF2200A9339E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680D36B71CB6DF2200A9339E /* Main.storyboard */; };
-		680D36BB1CB6DF2200A9339E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 680D36BA1CB6DF2200A9339E /* Assets.xcassets */; };
-		680D36BE1CB6DF2200A9339E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680D36BC1CB6DF2200A9339E /* LaunchScreen.storyboard */; };
-		680D37001CB6E14B00A9339E /* loginosQuickTestsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680D36FF1CB6E14B00A9339E /* loginosQuickTestsSpec.swift */; };
-		680D37011CB6E5E400A9339E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680D36B51CB6DF2200A9339E /* ViewController.swift */; };
-		680D37021CB6F35F00A9339E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680D36B71CB6DF2200A9339E /* Main.storyboard */; };
-		6814E79E1CB7F90700288865 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689B500B1CB7D06900B541AE /* Nimble.framework */; };
-		6814E79F1CB7F90900288865 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689B50091CB7D06500B541AE /* Quick.framework */; };
-		6849E6A81CB7FA3B00B33872 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689B50091CB7D06500B541AE /* Quick.framework */; };
-		6849E6A91CB7FA3D00B33872 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689B500B1CB7D06900B541AE /* Nimble.framework */; };
-		6849E6AB1CB7FA3F00B33872 /* Pods_loginosQuickTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6849E6AA1CB7FA3F00B33872 /* Pods_loginosQuickTests.framework */; };
-		6849E6AC1CB7FA7300B33872 /* Pods_loginosQuickTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6849E6AA1CB7FA3F00B33872 /* Pods_loginosQuickTests.framework */; };
-		6849E6AD1CB7FA7C00B33872 /* Pods_loginosQuickTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9822C843C7176E01AF51D410 /* Pods_loginosQuickTests.framework */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		680D36FA1CB6E10A00A9339E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 680D36A81CB6DF2200A9339E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 680D36AF1CB6DF2200A9339E;
-			remoteInfo = loginos;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		680D36B01CB6DF2200A9339E /* loginos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = loginos.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		680D36B31CB6DF2200A9339E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		680D36B51CB6DF2200A9339E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		680D36B81CB6DF2200A9339E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		680D36BA1CB6DF2200A9339E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		680D36BD1CB6DF2200A9339E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		680D36BF1CB6DF2200A9339E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		680D36F51CB6E10A00A9339E /* loginosQuickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = loginosQuickTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		680D36F91CB6E10A00A9339E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		680D36FF1CB6E14B00A9339E /* loginosQuickTestsSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginosQuickTestsSpec.swift; sourceTree = "<group>"; };
-		6849E6AA1CB7FA3F00B33872 /* Pods_loginosQuickTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_loginosQuickTests.framework; path = "../../Library/Developer/Xcode/DerivedData/loginos-eeppebnjcicjpbeaobavehycizdu/Build/Products/Debug-iphonesimulator/Pods_loginosQuickTests.framework"; sourceTree = "<group>"; };
-		689B50091CB7D06500B541AE /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "../../Library/Developer/Xcode/DerivedData/loginos-eeppebnjcicjpbeaobavehycizdu/Build/Products/Debug-iphonesimulator/Quick.framework"; sourceTree = "<group>"; };
-		689B500B1CB7D06900B541AE /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "../../Library/Developer/Xcode/DerivedData/loginos-eeppebnjcicjpbeaobavehycizdu/Build/Products/Debug-iphonesimulator/Nimble.framework"; sourceTree = "<group>"; };
-		9822C843C7176E01AF51D410 /* Pods_loginosQuickTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_loginosQuickTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB24EDAFB0FDC3111A1F8179 /* Pods-loginosQuickTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loginosQuickTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-loginosQuickTests/Pods-loginosQuickTests.release.xcconfig"; sourceTree = "<group>"; };
-		D12A2F44E4B297C7952AA31B /* Pods-loginosQuickTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loginosQuickTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-loginosQuickTests/Pods-loginosQuickTests.debug.xcconfig"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		680D36AD1CB6DF2200A9339E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6849E6AD1CB7FA7C00B33872 /* Pods_loginosQuickTests.framework in Frameworks */,
-				6849E6AB1CB7FA3F00B33872 /* Pods_loginosQuickTests.framework in Frameworks */,
-				6849E6A91CB7FA3D00B33872 /* Nimble.framework in Frameworks */,
-				6849E6A81CB7FA3B00B33872 /* Quick.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		680D36F21CB6E10A00A9339E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6849E6AC1CB7FA7300B33872 /* Pods_loginosQuickTests.framework in Frameworks */,
-				210DA5B5AB1D4C5F7A4C099E /* Pods_loginosQuickTests.framework in Frameworks */,
-				6814E79E1CB7F90700288865 /* Nimble.framework in Frameworks */,
-				6814E79F1CB7F90900288865 /* Quick.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		680D36A71CB6DF2200A9339E = {
-			isa = PBXGroup;
-			children = (
-				680D36B21CB6DF2200A9339E /* loginos */,
-				680D36F61CB6E10A00A9339E /* loginosQuickTests */,
-				680D36B11CB6DF2200A9339E /* Products */,
-				DC21152236F31259A16173F5 /* Pods */,
-				8AFA5BA5E81B475DC9D4EAC6 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		680D36B11CB6DF2200A9339E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				680D36B01CB6DF2200A9339E /* loginos.app */,
-				680D36F51CB6E10A00A9339E /* loginosQuickTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		680D36B21CB6DF2200A9339E /* loginos */ = {
-			isa = PBXGroup;
-			children = (
-				680D36B31CB6DF2200A9339E /* AppDelegate.swift */,
-				680D36B51CB6DF2200A9339E /* ViewController.swift */,
-				680D36B71CB6DF2200A9339E /* Main.storyboard */,
-				680D36BA1CB6DF2200A9339E /* Assets.xcassets */,
-				680D36BC1CB6DF2200A9339E /* LaunchScreen.storyboard */,
-				680D36BF1CB6DF2200A9339E /* Info.plist */,
-			);
-			path = loginos;
-			sourceTree = "<group>";
-		};
-		680D36F61CB6E10A00A9339E /* loginosQuickTests */ = {
-			isa = PBXGroup;
-			children = (
-				680D36FF1CB6E14B00A9339E /* loginosQuickTestsSpec.swift */,
-				680D36F91CB6E10A00A9339E /* Info.plist */,
-			);
-			path = loginosQuickTests;
-			sourceTree = "<group>";
-		};
-		8AFA5BA5E81B475DC9D4EAC6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6849E6AA1CB7FA3F00B33872 /* Pods_loginosQuickTests.framework */,
-				689B500B1CB7D06900B541AE /* Nimble.framework */,
-				689B50091CB7D06500B541AE /* Quick.framework */,
-				9822C843C7176E01AF51D410 /* Pods_loginosQuickTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DC21152236F31259A16173F5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D12A2F44E4B297C7952AA31B /* Pods-loginosQuickTests.debug.xcconfig */,
-				BB24EDAFB0FDC3111A1F8179 /* Pods-loginosQuickTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		680D36AF1CB6DF2200A9339E /* loginos */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 680D36C21CB6DF2200A9339E /* Build configuration list for PBXNativeTarget "loginos" */;
-			buildPhases = (
-				680D36AC1CB6DF2200A9339E /* Sources */,
-				680D36AD1CB6DF2200A9339E /* Frameworks */,
-				680D36AE1CB6DF2200A9339E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = loginos;
-			productName = loginos;
-			productReference = 680D36B01CB6DF2200A9339E /* loginos.app */;
-			productType = "com.apple.product-type.application";
-		};
-		680D36F41CB6E10A00A9339E /* loginosQuickTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 680D36FE1CB6E10A00A9339E /* Build configuration list for PBXNativeTarget "loginosQuickTests" */;
-			buildPhases = (
-				BE7A8491AC649182D86AC9FB /* Check Pods Manifest.lock */,
-				680D36F11CB6E10A00A9339E /* Sources */,
-				680D36F21CB6E10A00A9339E /* Frameworks */,
-				680D36F31CB6E10A00A9339E /* Resources */,
-				025D37FC7A9F575C15A045EF /* Embed Pods Frameworks */,
-				F6A11834804ACED644F84B10 /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				680D36FB1CB6E10A00A9339E /* PBXTargetDependency */,
-			);
-			name = loginosQuickTests;
-			productName = loginosQuickTests;
-			productReference = 680D36F51CB6E10A00A9339E /* loginosQuickTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		680D36A81CB6DF2200A9339E /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = matulik;
-				TargetAttributes = {
-					680D36AF1CB6DF2200A9339E = {
-						CreatedOnToolsVersion = 7.3;
-					};
-					680D36F41CB6E10A00A9339E = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = 680D36AF1CB6DF2200A9339E;
-					};
-				};
-			};
-			buildConfigurationList = 680D36AB1CB6DF2200A9339E /* Build configuration list for PBXProject "loginos" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 680D36A71CB6DF2200A9339E;
-			productRefGroup = 680D36B11CB6DF2200A9339E /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				680D36AF1CB6DF2200A9339E /* loginos */,
-				680D36F41CB6E10A00A9339E /* loginosQuickTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		680D36AE1CB6DF2200A9339E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				680D36BE1CB6DF2200A9339E /* LaunchScreen.storyboard in Resources */,
-				680D36BB1CB6DF2200A9339E /* Assets.xcassets in Resources */,
-				680D36B91CB6DF2200A9339E /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		680D36F31CB6E10A00A9339E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				680D37021CB6F35F00A9339E /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		025D37FC7A9F575C15A045EF /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-loginosQuickTests/Pods-loginosQuickTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BE7A8491AC649182D86AC9FB /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		F6A11834804ACED644F84B10 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-loginosQuickTests/Pods-loginosQuickTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		680D36AC1CB6DF2200A9339E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				680D36B61CB6DF2200A9339E /* ViewController.swift in Sources */,
-				680D36B41CB6DF2200A9339E /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		680D36F11CB6E10A00A9339E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				680D37011CB6E5E400A9339E /* ViewController.swift in Sources */,
-				680D37001CB6E14B00A9339E /* loginosQuickTestsSpec.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		680D36FB1CB6E10A00A9339E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 680D36AF1CB6DF2200A9339E /* loginos */;
-			targetProxy = 680D36FA1CB6E10A00A9339E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		680D36B71CB6DF2200A9339E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				680D36B81CB6DF2200A9339E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		680D36BC1CB6DF2200A9339E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				680D36BD1CB6DF2200A9339E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		680D36C01CB6DF2200A9339E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		680D36C11CB6DF2200A9339E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		680D36C31CB6DF2200A9339E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = loginos/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = pl.matulik.loginos;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		680D36C41CB6DF2200A9339E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = loginos/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = pl.matulik.loginos;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		680D36FC1CB6E10A00A9339E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D12A2F44E4B297C7952AA31B /* Pods-loginosQuickTests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = loginosQuickTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = pl.matulik.loginosQuickTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/loginos.app/loginos";
-			};
-			name = Debug;
-		};
-		680D36FD1CB6E10A00A9339E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB24EDAFB0FDC3111A1F8179 /* Pods-loginosQuickTests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = loginosQuickTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = pl.matulik.loginosQuickTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/loginos.app/loginos";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		680D36AB1CB6DF2200A9339E /* Build configuration list for PBXProject "loginos" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				680D36C01CB6DF2200A9339E /* Debug */,
-				680D36C11CB6DF2200A9339E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		680D36C21CB6DF2200A9339E /* Build configuration list for PBXNativeTarget "loginos" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				680D36C31CB6DF2200A9339E /* Debug */,
-				680D36C41CB6DF2200A9339E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		680D36FE1CB6E10A00A9339E /* Build configuration list for PBXNativeTarget "loginosQuickTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				680D36FC1CB6E10A00A9339E /* Debug */,
-				680D36FD1CB6E10A00A9339E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 680D36A81CB6DF2200A9339E /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>025D37FC7A9F575C15A045EF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-loginosQuickTests/Pods-loginosQuickTests-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>210DA5B5AB1D4C5F7A4C099E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9822C843C7176E01AF51D410</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4C08C43E7D9102EFD85AE26E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8BC21BA1BB409E513B7F148D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>67ADFB2E464347BDEBC1F556</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-loginos/Pods-loginos-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>680D36A71CB6DF2200A9339E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>680D36B21CB6DF2200A9339E</string>
+				<string>680D36F61CB6E10A00A9339E</string>
+				<string>680D36B11CB6DF2200A9339E</string>
+				<string>DC21152236F31259A16173F5</string>
+				<string>8AFA5BA5E81B475DC9D4EAC6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>680D36A81CB6DF2200A9339E</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0730</string>
+				<key>LastUpgradeCheck</key>
+				<string>0730</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>matulik</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>680D36AF1CB6DF2200A9339E</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3</string>
+					</dict>
+					<key>680D36F41CB6E10A00A9339E</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3</string>
+						<key>TestTargetID</key>
+						<string>680D36AF1CB6DF2200A9339E</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>680D36AB1CB6DF2200A9339E</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>680D36A71CB6DF2200A9339E</string>
+			<key>productRefGroup</key>
+			<string>680D36B11CB6DF2200A9339E</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>680D36AF1CB6DF2200A9339E</string>
+				<string>680D36F41CB6E10A00A9339E</string>
+			</array>
+		</dict>
+		<key>680D36AB1CB6DF2200A9339E</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>680D36C01CB6DF2200A9339E</string>
+				<string>680D36C11CB6DF2200A9339E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>680D36AC1CB6DF2200A9339E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>680D36B61CB6DF2200A9339E</string>
+				<string>680D36B41CB6DF2200A9339E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>680D36AD1CB6DF2200A9339E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>6849E6AD1CB7FA7C00B33872</string>
+				<string>6849E6AB1CB7FA3F00B33872</string>
+				<string>6849E6A91CB7FA3D00B33872</string>
+				<string>6849E6A81CB7FA3B00B33872</string>
+				<string>4C08C43E7D9102EFD85AE26E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>680D36AE1CB6DF2200A9339E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>680D36BE1CB6DF2200A9339E</string>
+				<string>680D36BB1CB6DF2200A9339E</string>
+				<string>680D36B91CB6DF2200A9339E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>680D36AF1CB6DF2200A9339E</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>680D36C21CB6DF2200A9339E</string>
+			<key>buildPhases</key>
+			<array>
+				<string>A393737E036B93ECDB7FD037</string>
+				<string>680D36AC1CB6DF2200A9339E</string>
+				<string>680D36AD1CB6DF2200A9339E</string>
+				<string>680D36AE1CB6DF2200A9339E</string>
+				<string>67ADFB2E464347BDEBC1F556</string>
+				<string>A27AB5E8BF153AE5481B8A0A</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>loginos</string>
+			<key>productName</key>
+			<string>loginos</string>
+			<key>productReference</key>
+			<string>680D36B01CB6DF2200A9339E</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>680D36B01CB6DF2200A9339E</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>loginos.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>680D36B11CB6DF2200A9339E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>680D36B01CB6DF2200A9339E</string>
+				<string>680D36F51CB6E10A00A9339E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>680D36B21CB6DF2200A9339E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>680D36B31CB6DF2200A9339E</string>
+				<string>680D36B51CB6DF2200A9339E</string>
+				<string>680D36B71CB6DF2200A9339E</string>
+				<string>680D36BA1CB6DF2200A9339E</string>
+				<string>680D36BC1CB6DF2200A9339E</string>
+				<string>680D36BF1CB6DF2200A9339E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>loginos</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>680D36B31CB6DF2200A9339E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>AppDelegate.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>680D36B41CB6DF2200A9339E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>680D36B31CB6DF2200A9339E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>680D36B51CB6DF2200A9339E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>ViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>680D36B61CB6DF2200A9339E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>680D36B51CB6DF2200A9339E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>680D36B71CB6DF2200A9339E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>680D36B81CB6DF2200A9339E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>680D36B81CB6DF2200A9339E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>680D36B91CB6DF2200A9339E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>680D36B71CB6DF2200A9339E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>680D36BA1CB6DF2200A9339E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Assets.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>680D36BB1CB6DF2200A9339E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>680D36BA1CB6DF2200A9339E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>680D36BC1CB6DF2200A9339E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>680D36BD1CB6DF2200A9339E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>680D36BD1CB6DF2200A9339E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>680D36BE1CB6DF2200A9339E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>680D36BC1CB6DF2200A9339E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>680D36BF1CB6DF2200A9339E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>680D36C01CB6DF2200A9339E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>680D36C11CB6DF2200A9339E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>680D36C21CB6DF2200A9339E</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>680D36C31CB6DF2200A9339E</string>
+				<string>680D36C41CB6DF2200A9339E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>680D36C31CB6DF2200A9339E</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>7FF02D34194E66D9F54C7F1B</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>INFOPLIST_FILE</key>
+				<string>loginos/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>pl.matulik.loginos</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>680D36C41CB6DF2200A9339E</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>D1D87A357284D4C55C3A70F0</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>INFOPLIST_FILE</key>
+				<string>loginos/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>pl.matulik.loginos</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>680D36F11CB6E10A00A9339E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>680D37011CB6E5E400A9339E</string>
+				<string>680D37001CB6E14B00A9339E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>680D36F21CB6E10A00A9339E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>6849E6AC1CB7FA7300B33872</string>
+				<string>210DA5B5AB1D4C5F7A4C099E</string>
+				<string>6814E79E1CB7F90700288865</string>
+				<string>6814E79F1CB7F90900288865</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>680D36F31CB6E10A00A9339E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>680D37021CB6F35F00A9339E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>680D36F41CB6E10A00A9339E</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>680D36FE1CB6E10A00A9339E</string>
+			<key>buildPhases</key>
+			<array>
+				<string>BE7A8491AC649182D86AC9FB</string>
+				<string>680D36F11CB6E10A00A9339E</string>
+				<string>680D36F21CB6E10A00A9339E</string>
+				<string>680D36F31CB6E10A00A9339E</string>
+				<string>025D37FC7A9F575C15A045EF</string>
+				<string>F6A11834804ACED644F84B10</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>680D36FB1CB6E10A00A9339E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>loginosQuickTests</string>
+			<key>productName</key>
+			<string>loginosQuickTests</string>
+			<key>productReference</key>
+			<string>680D36F51CB6E10A00A9339E</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>680D36F51CB6E10A00A9339E</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>loginosQuickTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>680D36F61CB6E10A00A9339E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>680D36FF1CB6E14B00A9339E</string>
+				<string>680D36F91CB6E10A00A9339E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>loginosQuickTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>680D36F91CB6E10A00A9339E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>680D36FA1CB6E10A00A9339E</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>680D36A81CB6DF2200A9339E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>680D36AF1CB6DF2200A9339E</string>
+			<key>remoteInfo</key>
+			<string>loginos</string>
+		</dict>
+		<key>680D36FB1CB6E10A00A9339E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>680D36AF1CB6DF2200A9339E</string>
+			<key>targetProxy</key>
+			<string>680D36FA1CB6E10A00A9339E</string>
+		</dict>
+		<key>680D36FC1CB6E10A00A9339E</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>D12A2F44E4B297C7952AA31B</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>INFOPLIST_FILE</key>
+				<string>loginosQuickTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>pl.matulik.loginosQuickTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/loginos.app/loginos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>680D36FD1CB6E10A00A9339E</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>BB24EDAFB0FDC3111A1F8179</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>INFOPLIST_FILE</key>
+				<string>loginosQuickTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>pl.matulik.loginosQuickTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/loginos.app/loginos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>680D36FE1CB6E10A00A9339E</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>680D36FC1CB6E10A00A9339E</string>
+				<string>680D36FD1CB6E10A00A9339E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>680D36FF1CB6E14B00A9339E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>loginosQuickTestsSpec.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>680D37001CB6E14B00A9339E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>680D36FF1CB6E14B00A9339E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>680D37011CB6E5E400A9339E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>680D36B51CB6DF2200A9339E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>680D37021CB6F35F00A9339E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>680D36B71CB6DF2200A9339E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6814E79E1CB7F90700288865</key>
+		<dict>
+			<key>fileRef</key>
+			<string>689B500B1CB7D06900B541AE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6814E79F1CB7F90900288865</key>
+		<dict>
+			<key>fileRef</key>
+			<string>689B50091CB7D06500B541AE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6849E6A81CB7FA3B00B33872</key>
+		<dict>
+			<key>fileRef</key>
+			<string>689B50091CB7D06500B541AE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6849E6A91CB7FA3D00B33872</key>
+		<dict>
+			<key>fileRef</key>
+			<string>689B500B1CB7D06900B541AE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6849E6AA1CB7FA3F00B33872</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Pods_loginosQuickTests.framework</string>
+			<key>path</key>
+			<string>../../Library/Developer/Xcode/DerivedData/loginos-eeppebnjcicjpbeaobavehycizdu/Build/Products/Debug-iphonesimulator/Pods_loginosQuickTests.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6849E6AB1CB7FA3F00B33872</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6849E6AA1CB7FA3F00B33872</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6849E6AC1CB7FA7300B33872</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6849E6AA1CB7FA3F00B33872</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6849E6AD1CB7FA7C00B33872</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9822C843C7176E01AF51D410</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>689B50091CB7D06500B541AE</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Quick.framework</string>
+			<key>path</key>
+			<string>../../Library/Developer/Xcode/DerivedData/loginos-eeppebnjcicjpbeaobavehycizdu/Build/Products/Debug-iphonesimulator/Quick.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>689B500B1CB7D06900B541AE</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Nimble.framework</string>
+			<key>path</key>
+			<string>../../Library/Developer/Xcode/DerivedData/loginos-eeppebnjcicjpbeaobavehycizdu/Build/Products/Debug-iphonesimulator/Nimble.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7FF02D34194E66D9F54C7F1B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-loginos.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-loginos/Pods-loginos.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8AFA5BA5E81B475DC9D4EAC6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6849E6AA1CB7FA3F00B33872</string>
+				<string>689B500B1CB7D06900B541AE</string>
+				<string>689B50091CB7D06500B541AE</string>
+				<string>9822C843C7176E01AF51D410</string>
+				<string>8BC21BA1BB409E513B7F148D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8BC21BA1BB409E513B7F148D</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_loginos.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>9822C843C7176E01AF51D410</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_loginosQuickTests.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>A27AB5E8BF153AE5481B8A0A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-loginos/Pods-loginos-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>A393737E036B93ECDB7FD037</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>BB24EDAFB0FDC3111A1F8179</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-loginosQuickTests.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-loginosQuickTests/Pods-loginosQuickTests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BE7A8491AC649182D86AC9FB</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>D12A2F44E4B297C7952AA31B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-loginosQuickTests.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-loginosQuickTests/Pods-loginosQuickTests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D1D87A357284D4C55C3A70F0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-loginos.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-loginos/Pods-loginos.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DC21152236F31259A16173F5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D12A2F44E4B297C7952AA31B</string>
+				<string>BB24EDAFB0FDC3111A1F8179</string>
+				<string>7FF02D34194E66D9F54C7F1B</string>
+				<string>D1D87A357284D4C55C3A70F0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F6A11834804ACED644F84B10</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-loginosQuickTests/Pods-loginosQuickTests-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>680D36A81CB6DF2200A9339E</string>
+</dict>
+</plist>
