@@ -20,7 +20,7 @@ import XCTest
  Given app is start
  When I type incorrect username or password
  Then I see Error alert
- */
+*/
 
 class loginosQuickTestsSpec: QuickSpec {
     var navigationController : UINavigationController!
