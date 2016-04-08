@@ -16,8 +16,10 @@
 		680D37001CB6E14B00A9339E /* loginosQuickTestsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680D36FF1CB6E14B00A9339E /* loginosQuickTestsSpec.swift */; };
 		680D37011CB6E5E400A9339E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680D36B51CB6DF2200A9339E /* ViewController.swift */; };
 		680D37021CB6F35F00A9339E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680D36B71CB6DF2200A9339E /* Main.storyboard */; };
-		689B500A1CB7D06500B541AE /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689B50091CB7D06500B541AE /* Quick.framework */; };
-		689B500C1CB7D06900B541AE /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689B500B1CB7D06900B541AE /* Nimble.framework */; };
+		683BA7181CB7D13B00D05C7A /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689B500B1CB7D06900B541AE /* Nimble.framework */; };
+		683BA7191CB7D13D00D05C7A /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689B50091CB7D06500B541AE /* Quick.framework */; };
+		683BA71A1CB7D14500D05C7A /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689B50091CB7D06500B541AE /* Quick.framework */; };
+		683BA71B1CB7D14800D05C7A /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689B500B1CB7D06900B541AE /* Nimble.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				683BA71A1CB7D14500D05C7A /* Quick.framework in Frameworks */,
+				683BA71B1CB7D14800D05C7A /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,9 +67,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				689B500C1CB7D06900B541AE /* Nimble.framework in Frameworks */,
-				689B500A1CB7D06500B541AE /* Quick.framework in Frameworks */,
 				210DA5B5AB1D4C5F7A4C099E /* Pods_loginosQuickTests.framework in Frameworks */,
+				683BA7181CB7D13B00D05C7A /* Nimble.framework in Frameworks */,
+				683BA7191CB7D13D00D05C7A /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
