@@ -18,6 +18,11 @@
 		680D37021CB6F35F00A9339E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680D36B71CB6DF2200A9339E /* Main.storyboard */; };
 		6814E79E1CB7F90700288865 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689B500B1CB7D06900B541AE /* Nimble.framework */; };
 		6814E79F1CB7F90900288865 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689B50091CB7D06500B541AE /* Quick.framework */; };
+		6849E6A81CB7FA3B00B33872 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689B50091CB7D06500B541AE /* Quick.framework */; };
+		6849E6A91CB7FA3D00B33872 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689B500B1CB7D06900B541AE /* Nimble.framework */; };
+		6849E6AB1CB7FA3F00B33872 /* Pods_loginosQuickTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6849E6AA1CB7FA3F00B33872 /* Pods_loginosQuickTests.framework */; };
+		6849E6AC1CB7FA7300B33872 /* Pods_loginosQuickTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6849E6AA1CB7FA3F00B33872 /* Pods_loginosQuickTests.framework */; };
+		6849E6AD1CB7FA7C00B33872 /* Pods_loginosQuickTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9822C843C7176E01AF51D410 /* Pods_loginosQuickTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +46,7 @@
 		680D36F51CB6E10A00A9339E /* loginosQuickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = loginosQuickTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		680D36F91CB6E10A00A9339E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		680D36FF1CB6E14B00A9339E /* loginosQuickTestsSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginosQuickTestsSpec.swift; sourceTree = "<group>"; };
+		6849E6AA1CB7FA3F00B33872 /* Pods_loginosQuickTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_loginosQuickTests.framework; path = "../../Library/Developer/Xcode/DerivedData/loginos-eeppebnjcicjpbeaobavehycizdu/Build/Products/Debug-iphonesimulator/Pods_loginosQuickTests.framework"; sourceTree = "<group>"; };
 		689B50091CB7D06500B541AE /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "../../Library/Developer/Xcode/DerivedData/loginos-eeppebnjcicjpbeaobavehycizdu/Build/Products/Debug-iphonesimulator/Quick.framework"; sourceTree = "<group>"; };
 		689B500B1CB7D06900B541AE /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "../../Library/Developer/Xcode/DerivedData/loginos-eeppebnjcicjpbeaobavehycizdu/Build/Products/Debug-iphonesimulator/Nimble.framework"; sourceTree = "<group>"; };
 		9822C843C7176E01AF51D410 /* Pods_loginosQuickTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_loginosQuickTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +59,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6849E6AD1CB7FA7C00B33872 /* Pods_loginosQuickTests.framework in Frameworks */,
+				6849E6AB1CB7FA3F00B33872 /* Pods_loginosQuickTests.framework in Frameworks */,
+				6849E6A91CB7FA3D00B33872 /* Nimble.framework in Frameworks */,
+				6849E6A81CB7FA3B00B33872 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6849E6AC1CB7FA7300B33872 /* Pods_loginosQuickTests.framework in Frameworks */,
 				210DA5B5AB1D4C5F7A4C099E /* Pods_loginosQuickTests.framework in Frameworks */,
 				6814E79E1CB7F90700288865 /* Nimble.framework in Frameworks */,
 				6814E79F1CB7F90900288865 /* Quick.framework in Frameworks */,
@@ -114,6 +125,7 @@
 		8AFA5BA5E81B475DC9D4EAC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6849E6AA1CB7FA3F00B33872 /* Pods_loginosQuickTests.framework */,
 				689B500B1CB7D06900B541AE /* Nimble.framework */,
 				689B50091CB7D06500B541AE /* Quick.framework */,
 				9822C843C7176E01AF51D410 /* Pods_loginosQuickTests.framework */,
