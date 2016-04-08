@@ -16,6 +16,8 @@
 		680D37001CB6E14B00A9339E /* loginosQuickTestsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680D36FF1CB6E14B00A9339E /* loginosQuickTestsSpec.swift */; };
 		680D37011CB6E5E400A9339E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680D36B51CB6DF2200A9339E /* ViewController.swift */; };
 		680D37021CB6F35F00A9339E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680D36B71CB6DF2200A9339E /* Main.storyboard */; };
+		6814E79E1CB7F90700288865 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689B500B1CB7D06900B541AE /* Nimble.framework */; };
+		6814E79F1CB7F90900288865 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689B50091CB7D06500B541AE /* Quick.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				210DA5B5AB1D4C5F7A4C099E /* Pods_loginosQuickTests.framework in Frameworks */,
+				6814E79E1CB7F90700288865 /* Nimble.framework in Frameworks */,
+				6814E79F1CB7F90900288865 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,7 +412,6 @@
 		};
 		680D36C31CB6DF2200A9339E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D12A2F44E4B297C7952AA31B /* Pods-loginosQuickTests.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = loginos/Info.plist;
@@ -420,7 +423,6 @@
 		};
 		680D36C41CB6DF2200A9339E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB24EDAFB0FDC3111A1F8179 /* Pods-loginosQuickTests.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = loginos/Info.plist;
