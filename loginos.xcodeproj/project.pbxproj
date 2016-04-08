@@ -46,7 +46,6 @@
 		680D36FF1CB6E14B00A9339E /* loginosQuickTestsSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginosQuickTestsSpec.swift; sourceTree = "<group>"; };
 		689B50091CB7D06500B541AE /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "../../Library/Developer/Xcode/DerivedData/loginos-eeppebnjcicjpbeaobavehycizdu/Build/Products/Debug-iphonesimulator/Quick.framework"; sourceTree = "<group>"; };
 		689B500B1CB7D06900B541AE /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "../../Library/Developer/Xcode/DerivedData/loginos-eeppebnjcicjpbeaobavehycizdu/Build/Products/Debug-iphonesimulator/Nimble.framework"; sourceTree = "<group>"; };
-		7A65228C5BE152C03D9C848D /* Pods_loginosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_loginosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9822C843C7176E01AF51D410 /* Pods_loginosQuickTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_loginosQuickTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A479F8BCCFBF186765452BFD /* Pods-loginosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loginosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-loginosTests/Pods-loginosTests.release.xcconfig"; sourceTree = "<group>"; };
 		BB24EDAFB0FDC3111A1F8179 /* Pods-loginosQuickTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loginosQuickTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-loginosQuickTests/Pods-loginosQuickTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -123,7 +122,6 @@
 			children = (
 				689B500B1CB7D06900B541AE /* Nimble.framework */,
 				689B50091CB7D06500B541AE /* Quick.framework */,
-				7A65228C5BE152C03D9C848D /* Pods_loginosTests.framework */,
 				9822C843C7176E01AF51D410 /* Pods_loginosQuickTests.framework */,
 			);
 			name = Frameworks;
